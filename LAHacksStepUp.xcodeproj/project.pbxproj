@@ -1,713 +1,397 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00CC51723B39601D8726E7DD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>31ACC443728519544E0C28F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>07B1407614ABB7CEEB01BB09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8C4B772F25DABB10BD969927</string>
-				<string>ECC7D6A757DE23A125E07CC8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>31ACC443728519544E0C28F9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_LAHacksStepUp.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3B5DB9561CD49EC500DB8AFA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B5DB9611CD49EC500DB8AFA</string>
-				<string>3B5DB9601CD49EC500DB8AFA</string>
-				<string>07B1407614ABB7CEEB01BB09</string>
-				<string>F3862C512666F44D641D0AD9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB9571CD49EC500DB8AFA</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>LAHacksTeam</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>3B5DB95E1CD49EC500DB8AFA</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>3B5DB95A1CD49EC500DB8AFA</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>3B5DB9561CD49EC500DB8AFA</string>
-			<key>productRefGroup</key>
-			<string>3B5DB9601CD49EC500DB8AFA</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>3B5DB95E1CD49EC500DB8AFA</string>
-			</array>
-		</dict>
-		<key>3B5DB95A1CD49EC500DB8AFA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3B5DB96F1CD49EC500DB8AFA</string>
-				<string>3B5DB9701CD49EC500DB8AFA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3B5DB95B1CD49EC500DB8AFA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3B5DB9651CD49EC500DB8AFA</string>
-				<string>3B5DB9631CD49EC500DB8AFA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B5DB95C1CD49EC500DB8AFA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>00CC51723B39601D8726E7DD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B5DB95D1CD49EC500DB8AFA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3B5DB96D1CD49EC500DB8AFA</string>
-				<string>3B5DB96A1CD49EC500DB8AFA</string>
-				<string>3B5DB9681CD49EC500DB8AFA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B5DB95E1CD49EC500DB8AFA</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3B5DB9711CD49EC500DB8AFA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>86D2B9B29B251A18612C50F8</string>
-				<string>3B5DB95B1CD49EC500DB8AFA</string>
-				<string>3B5DB95C1CD49EC500DB8AFA</string>
-				<string>3B5DB95D1CD49EC500DB8AFA</string>
-				<string>484D1638AA2E676342E87A98</string>
-				<string>A75ADE4D6AF5F422C909E655</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>LAHacksStepUp</string>
-			<key>productName</key>
-			<string>LAHacksStepUp</string>
-			<key>productReference</key>
-			<string>3B5DB95F1CD49EC500DB8AFA</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>3B5DB95F1CD49EC500DB8AFA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>LAHacksStepUp.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3B5DB9601CD49EC500DB8AFA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B5DB95F1CD49EC500DB8AFA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB9611CD49EC500DB8AFA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B5DB9621CD49EC500DB8AFA</string>
-				<string>3B5DB9641CD49EC500DB8AFA</string>
-				<string>3B5DB9661CD49EC500DB8AFA</string>
-				<string>3B5DB9691CD49EC500DB8AFA</string>
-				<string>3B5DB96B1CD49EC500DB8AFA</string>
-				<string>3B5DB96E1CD49EC500DB8AFA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>LAHacksStepUp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB9621CD49EC500DB8AFA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB9631CD49EC500DB8AFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B5DB9621CD49EC500DB8AFA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B5DB9641CD49EC500DB8AFA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB9651CD49EC500DB8AFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B5DB9641CD49EC500DB8AFA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B5DB9661CD49EC500DB8AFA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B5DB9671CD49EC500DB8AFA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB9671CD49EC500DB8AFA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB9681CD49EC500DB8AFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B5DB9661CD49EC500DB8AFA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B5DB9691CD49EC500DB8AFA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB96A1CD49EC500DB8AFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B5DB9691CD49EC500DB8AFA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B5DB96B1CD49EC500DB8AFA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B5DB96C1CD49EC500DB8AFA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB96C1CD49EC500DB8AFA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB96D1CD49EC500DB8AFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B5DB96B1CD49EC500DB8AFA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B5DB96E1CD49EC500DB8AFA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5DB96F1CD49EC500DB8AFA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3B5DB9701CD49EC500DB8AFA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3B5DB9711CD49EC500DB8AFA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3B5DB9721CD49EC500DB8AFA</string>
-				<string>3B5DB9731CD49EC500DB8AFA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3B5DB9721CD49EC500DB8AFA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8C4B772F25DABB10BD969927</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>LAHacksStepUp/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.huyanh.LAHacksStepUp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3B5DB9731CD49EC500DB8AFA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>ECC7D6A757DE23A125E07CC8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>LAHacksStepUp/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.huyanh.LAHacksStepUp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>484D1638AA2E676342E87A98</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-LAHacksStepUp/Pods-LAHacksStepUp-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>86D2B9B29B251A18612C50F8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8C4B772F25DABB10BD969927</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-LAHacksStepUp.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-LAHacksStepUp/Pods-LAHacksStepUp.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A75ADE4D6AF5F422C909E655</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-LAHacksStepUp/Pods-LAHacksStepUp-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>ECC7D6A757DE23A125E07CC8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-LAHacksStepUp.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-LAHacksStepUp/Pods-LAHacksStepUp.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F3862C512666F44D641D0AD9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>31ACC443728519544E0C28F9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>3B5DB9571CD49EC500DB8AFA</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00CC51723B39601D8726E7DD /* Pods_LAHacksStepUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31ACC443728519544E0C28F9 /* Pods_LAHacksStepUp.framework */; };
+		3B5DB9631CD49EC500DB8AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9621CD49EC500DB8AFA /* AppDelegate.swift */; };
+		3B5DB9651CD49EC500DB8AFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9641CD49EC500DB8AFA /* ViewController.swift */; };
+		3B5DB9681CD49EC500DB8AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB9661CD49EC500DB8AFA /* Main.storyboard */; };
+		3B5DB96A1CD49EC500DB8AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB9691CD49EC500DB8AFA /* Assets.xcassets */; };
+		3B5DB96D1CD49EC500DB8AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB96B1CD49EC500DB8AFA /* LaunchScreen.storyboard */; };
+		D237FBC11CD5405700CDB2E2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D237FBBF1CD5405700CDB2E2 /* FBSDKCoreKit.framework */; };
+		D237FBC21CD5405700CDB2E2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D237FBC01CD5405700CDB2E2 /* FBSDKLoginKit.framework */; };
+		D237FBC41CD5406300CDB2E2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D237FBC31CD5406300CDB2E2 /* FBSDKShareKit.framework */; };
+		D237FBC61CD5408000CDB2E2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D237FBC51CD5408000CDB2E2 /* Bolts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31ACC443728519544E0C28F9 /* Pods_LAHacksStepUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LAHacksStepUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5DB95F1CD49EC500DB8AFA /* LAHacksStepUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAHacksStepUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5DB9621CD49EC500DB8AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B5DB9641CD49EC500DB8AFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B5DB9671CD49EC500DB8AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B5DB9691CD49EC500DB8AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B5DB96C1CD49EC500DB8AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B5DB96E1CD49EC500DB8AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4B772F25DABB10BD969927 /* Pods-LAHacksStepUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LAHacksStepUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LAHacksStepUp/Pods-LAHacksStepUp.debug.xcconfig"; sourceTree = "<group>"; };
+		D237FBBF1CD5405700CDB2E2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		D237FBC01CD5405700CDB2E2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		D237FBC31CD5406300CDB2E2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		D237FBC51CD5408000CDB2E2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		ECC7D6A757DE23A125E07CC8 /* Pods-LAHacksStepUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LAHacksStepUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LAHacksStepUp/Pods-LAHacksStepUp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B5DB95C1CD49EC500DB8AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D237FBC61CD5408000CDB2E2 /* Bolts.framework in Frameworks */,
+				D237FBC41CD5406300CDB2E2 /* FBSDKShareKit.framework in Frameworks */,
+				00CC51723B39601D8726E7DD /* Pods_LAHacksStepUp.framework in Frameworks */,
+				D237FBC11CD5405700CDB2E2 /* FBSDKCoreKit.framework in Frameworks */,
+				D237FBC21CD5405700CDB2E2 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07B1407614ABB7CEEB01BB09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C4B772F25DABB10BD969927 /* Pods-LAHacksStepUp.debug.xcconfig */,
+				ECC7D6A757DE23A125E07CC8 /* Pods-LAHacksStepUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B5DB9561CD49EC500DB8AFA = {
+			isa = PBXGroup;
+			children = (
+				3B5DB9611CD49EC500DB8AFA /* LAHacksStepUp */,
+				3B5DB9601CD49EC500DB8AFA /* Products */,
+				07B1407614ABB7CEEB01BB09 /* Pods */,
+				F3862C512666F44D641D0AD9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B5DB9601CD49EC500DB8AFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B5DB95F1CD49EC500DB8AFA /* LAHacksStepUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B5DB9611CD49EC500DB8AFA /* LAHacksStepUp */ = {
+			isa = PBXGroup;
+			children = (
+				3B5DB9621CD49EC500DB8AFA /* AppDelegate.swift */,
+				3B5DB9641CD49EC500DB8AFA /* ViewController.swift */,
+				3B5DB9661CD49EC500DB8AFA /* Main.storyboard */,
+				3B5DB9691CD49EC500DB8AFA /* Assets.xcassets */,
+				3B5DB96B1CD49EC500DB8AFA /* LaunchScreen.storyboard */,
+				3B5DB96E1CD49EC500DB8AFA /* Info.plist */,
+			);
+			path = LAHacksStepUp;
+			sourceTree = "<group>";
+		};
+		F3862C512666F44D641D0AD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D237FBC51CD5408000CDB2E2 /* Bolts.framework */,
+				D237FBC31CD5406300CDB2E2 /* FBSDKShareKit.framework */,
+				D237FBBF1CD5405700CDB2E2 /* FBSDKCoreKit.framework */,
+				D237FBC01CD5405700CDB2E2 /* FBSDKLoginKit.framework */,
+				31ACC443728519544E0C28F9 /* Pods_LAHacksStepUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B5DB95E1CD49EC500DB8AFA /* LAHacksStepUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B5DB9711CD49EC500DB8AFA /* Build configuration list for PBXNativeTarget "LAHacksStepUp" */;
+			buildPhases = (
+				86D2B9B29B251A18612C50F8 /* Check Pods Manifest.lock */,
+				3B5DB95B1CD49EC500DB8AFA /* Sources */,
+				3B5DB95C1CD49EC500DB8AFA /* Frameworks */,
+				3B5DB95D1CD49EC500DB8AFA /* Resources */,
+				484D1638AA2E676342E87A98 /* Embed Pods Frameworks */,
+				A75ADE4D6AF5F422C909E655 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LAHacksStepUp;
+			productName = LAHacksStepUp;
+			productReference = 3B5DB95F1CD49EC500DB8AFA /* LAHacksStepUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B5DB9571CD49EC500DB8AFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LAHacksTeam;
+				TargetAttributes = {
+					3B5DB95E1CD49EC500DB8AFA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 3B5DB95A1CD49EC500DB8AFA /* Build configuration list for PBXProject "LAHacksStepUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B5DB9561CD49EC500DB8AFA;
+			productRefGroup = 3B5DB9601CD49EC500DB8AFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B5DB95E1CD49EC500DB8AFA /* LAHacksStepUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B5DB95D1CD49EC500DB8AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5DB96D1CD49EC500DB8AFA /* LaunchScreen.storyboard in Resources */,
+				3B5DB96A1CD49EC500DB8AFA /* Assets.xcassets in Resources */,
+				3B5DB9681CD49EC500DB8AFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		484D1638AA2E676342E87A98 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LAHacksStepUp/Pods-LAHacksStepUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D2B9B29B251A18612C50F8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A75ADE4D6AF5F422C909E655 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LAHacksStepUp/Pods-LAHacksStepUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B5DB95B1CD49EC500DB8AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5DB9651CD49EC500DB8AFA /* ViewController.swift in Sources */,
+				3B5DB9631CD49EC500DB8AFA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B5DB9661CD49EC500DB8AFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5DB9671CD49EC500DB8AFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B5DB96B1CD49EC500DB8AFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5DB96C1CD49EC500DB8AFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B5DB96F1CD49EC500DB8AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B5DB9701CD49EC500DB8AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B5DB9721CD49EC500DB8AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4B772F25DABB10BD969927 /* Pods-LAHacksStepUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LAHacksStepUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huyanh.LAHacksStepUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B5DB9731CD49EC500DB8AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC7D6A757DE23A125E07CC8 /* Pods-LAHacksStepUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LAHacksStepUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huyanh.LAHacksStepUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B5DB95A1CD49EC500DB8AFA /* Build configuration list for PBXProject "LAHacksStepUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5DB96F1CD49EC500DB8AFA /* Debug */,
+				3B5DB9701CD49EC500DB8AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B5DB9711CD49EC500DB8AFA /* Build configuration list for PBXNativeTarget "LAHacksStepUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5DB9721CD49EC500DB8AFA /* Debug */,
+				3B5DB9731CD49EC500DB8AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B5DB9571CD49EC500DB8AFA /* Project object */;
+}
