@@ -1,5 +1,5 @@
 # paso
-Our LAHacks projects using iOS and the FitBit API
+Our LAHacks project using iOS and the FitBit API
 http://www.unpaso.co/
 
 ## Inspiration
