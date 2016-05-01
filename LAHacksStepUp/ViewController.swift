@@ -133,9 +133,10 @@ extension ViewController {
             accessTokenUrl: "https://api.fitbit.com/oauth2/token",
             responseType:   "code"
         )
+        oauthswift.authorize_url_handler = SafariURLHandler(viewController: self)
         oauthswift.accessTokenBasicAuthentification = true
         let state: String = generateStateWithLength(20) as String
-        oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback/fitbit2")!, scope: "profile weight", state: state, success: {
+        oauthswift.authorizeWithCallbackURL( NSURL(string: "paso://oauth-callback")!, scope: "profile activity", state: state, success: {
             credential, response, parameters in
             self.showTokenAlert(serviceParameters["name"], credential: credential)
             self.testFitbit2(oauthswift)
@@ -145,7 +146,7 @@ extension ViewController {
     }
     
     func testFitbit2(oauthswift: OAuth2Swift) {
-        oauthswift.client.get("https://api.fitbit.com/1/user/-/profile.json", parameters: [:],
+        oauthswift.client.get("https://api.fitbit.com/1/user/[user-id]/activities/date/[date].json", parameters: [:],
                               success: {
                                 data, response in
                                 let jsonDict: AnyObject! = try? NSJSONSerialization.JSONObjectWithData(data, options: [])

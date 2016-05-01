@@ -16,16 +16,20 @@ import OAuthSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
-    func application(application: UIApplication,
-                     openURL url: NSURL,
-                             sourceApplication: String?,
-                             annotation: AnyObject) -> Bool {
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        print(url.host)
+        OAuthSwift.handleOpenURL(url)
+        if (url.host == "oauth-callback") {
+            OAuthSwift.handleOpenURL(url)
+        }
+        
         return FBSDKApplicationDelegate.sharedInstance().application(
             application,
             openURL: url,
@@ -34,7 +38,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
-        if (url.host == "paso://") {
+        print(url)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("Dashboard")
+        window!.rootViewController = vc
+        OAuthSwift.handleOpenURL(url)
+        if (url.host == "oauth-callback") {
+
             OAuthSwift.handleOpenURL(url)
         }
         return true
