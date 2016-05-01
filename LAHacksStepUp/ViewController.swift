@@ -11,8 +11,14 @@ import FBSDKCoreKit
 import FBSDKShareKit
 import FBSDKLoginKit
 import Bolts
+import OAuthSwift
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+    
+    @IBAction func fitbitPressed() {
+        doAuthService("Fitbit2")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +36,12 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
         }
+        
+        
+        initConf()
+        
+        // init now
+        get_url_handler()
         
     }
     
@@ -81,5 +93,162 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
         })
     }
+    
+}
+
+extension ViewController {
+    
+    func doAuthService(service: String) {
+        
+        guard var parameters = services[service] else {
+            showAlertView("Miss configuration", message: "\(service) not configured")
+            return
+        }
+        
+        
+        if Services.parametersEmpty(parameters) { // no value to set
+            let message = "\(service) seems to have not weel configured. \nPlease fill consumer key and secret into configuration file \(self.confPath)"
+            print(message)
+            showAlertView("Miss configuration", message: message)
+            // TODO here ask for parameters instead
+        }
+        
+        parameters["name"] = service
+        
+        switch service {
+        
+        case "Fitbit2":
+            doOAuthFitbit2(parameters)
+        
+        default:
+            print("\(service) not implemented")
+        }
+    }
+    
+    func doOAuthFitbit2(serviceParameters: [String:String]) {
+        let oauthswift = OAuth2Swift(
+            consumerKey:    serviceParameters["consumerKey"]!,
+            consumerSecret: serviceParameters["consumerSecret"]!,
+            authorizeUrl:   "https://www.fitbit.com/oauth2/authorize",
+            accessTokenUrl: "https://api.fitbit.com/oauth2/token",
+            responseType:   "code"
+        )
+        oauthswift.accessTokenBasicAuthentification = true
+        let state: String = generateStateWithLength(20) as String
+        oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback/fitbit2")!, scope: "profile weight", state: state, success: {
+            credential, response, parameters in
+            self.showTokenAlert(serviceParameters["name"], credential: credential)
+            self.testFitbit2(oauthswift)
+            }, failure: { error in
+                print(error.localizedDescription)
+        })
+    }
+    
+    func testFitbit2(oauthswift: OAuth2Swift) {
+        oauthswift.client.get("https://api.fitbit.com/1/user/-/profile.json", parameters: [:],
+                              success: {
+                                data, response in
+                                let jsonDict: AnyObject! = try? NSJSONSerialization.JSONObjectWithData(data, options: [])
+                                print(jsonDict)
+            }, failure: { error in
+                print(error.localizedDescription)
+        })
+    }
+}
+
+let services = Services()
+let DocumentDirectory = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+let FileManager: NSFileManager = NSFileManager.defaultManager()
+
+extension ViewController {
+    // MARK: utility methods
+    
+    var confPath: String {
+        let appPath = "\(DocumentDirectory)/.oauth/"
+        if !FileManager.fileExistsAtPath(appPath) {
+            do {
+                try FileManager.createDirectoryAtPath(appPath, withIntermediateDirectories: false, attributes: nil)
+            }catch {
+                print("Failed to create \(appPath)")
+            }
+        }
+        return "\(appPath)Services.plist"
+    }
+    
+    func initConf() {
+        initConfOld()
+        print("Load configuration from \n\(self.confPath)")
+        
+        // Load config from model file
+        if let path = NSBundle.mainBundle().pathForResource("Services", ofType: "plist") {
+            services.loadFromFile(path)
+            
+            if !FileManager.fileExistsAtPath(confPath) {
+                do {
+                    try FileManager.copyItemAtPath(path, toPath: confPath)
+                }catch {
+                    print("Failed to copy empty conf to\(confPath)")
+                }
+            }
+        }
+        services.loadFromFile(confPath)
+    }
+    
+    func initConfOld() {
+
+        services["Fitbit"] = Fitbit
+
+    }
+    
+    func snapshot() -> NSData {
+
+            UIGraphicsBeginImageContext(self.view.frame.size)
+            self.view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+            let fullScreenshot = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            UIImageWriteToSavedPhotosAlbum(fullScreenshot, nil, nil, nil)
+            return  UIImageJPEGRepresentation(fullScreenshot, 0.5)!
+
+    }
+    
+    func showAlertView(title: String, message: String) {
+
+            let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+
+    }
+    
+    func showTokenAlert(name: String?, credential: OAuthSwiftCredential) {
+        var message = "oauth_token:\(credential.oauth_token)"
+        if !credential.oauth_token_secret.isEmpty {
+            message += "\n\noauth_toke_secret:\(credential.oauth_token_secret)"
+        }
+        self.showAlertView(name ?? "Service", message: message)
+        
+        if let service = name {
+            services.updateService(service, dico: ["authentified":"1"])
+            // TODO refresh graphic
+        }
+    }
+    
+    // MARK: create an optionnal internal web view to handle connection
+    func createWebViewController() -> WebViewController {
+        let controller = WebViewController()
+        return controller
+    }
+    
+    func get_url_handler() -> OAuthSwiftURLHandlerType {
+        // Create a WebViewController with default behaviour from OAuthWebViewController
+        let url_handler = createWebViewController()
+
+        return url_handler
+        
+    }
+    //(I)
+    //let webViewController: WebViewController = createWebViewController()
+    //(S)
+    //var urlForWebView:?NSURL = nil
+    
     
 }
