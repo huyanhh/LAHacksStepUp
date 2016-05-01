@@ -38,13 +38,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
-        print(url)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("Dashboard")
-        window!.rootViewController = vc
-        OAuthSwift.handleOpenURL(url)
+        
+//        let vc = storyboard.instantiateViewControllerWithIdentifier("Dashboard")
+//        window!.rootViewController = vc
         if (url.host == "oauth-callback") {
-
             OAuthSwift.handleOpenURL(url)
+//            NSNotificationCenter.defaultCenter().postNotificationName("Authenticated", object: nil)
         }
         return true
     }

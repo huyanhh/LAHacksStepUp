@@ -51,7 +51,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="43y-34-0nK" userLabel="About Us Cell">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="43y-34-0nK" id="9ed-ao-3og">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -73,21 +73,10 @@
                             <outlet property="delegate" destination="BDg-1z-7Oj" id="Df5-vj-UTa"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <segue destination="egj-bg-Flp" kind="show" identifier="Logout" id="c3S-KG-28J"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ig0-Ns-2l2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2985" y="24"/>
-        </scene>
-        <!--Login-->
-        <scene sceneID="Iwg-YI-ybC">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Login" id="egj-bg-Flp" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YF9-cQ-kaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2932.5" y="502"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lS4-QR-mpz">
@@ -119,6 +108,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k90-cY-TeN"/>
+                    <connections>
+                        <segue destination="Ukz-fY-dt4" kind="show" identifier="Authenticated" id="baj-lS-t5M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BrA-7M-z89" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

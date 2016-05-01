@@ -19,11 +19,15 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         doAuthService("Fitbit2")
     }
     
+    var jsonDict: AnyObject!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        NSNotificationCenter.defaultCenter().addObserverForName("Authenticated", object: nil, queue: nil) { (NSNotification) in
+            self.performSegueWithIdentifier("Authenticated", sender: self)
+        }
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
             // User is already logged in, do work such as go to next view controller.
@@ -93,7 +97,11 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
         })
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let vc = segue.destinationViewController as? DashboardViewController {
+            vc.jsonDict = jsonDict
+        }
+    }
 }
 
 extension ViewController {
@@ -138,19 +146,22 @@ extension ViewController {
         let state: String = generateStateWithLength(20) as String
         oauthswift.authorizeWithCallbackURL( NSURL(string: "paso://oauth-callback")!, scope: "profile activity", state: state, success: {
             credential, response, parameters in
-            self.showTokenAlert(serviceParameters["name"], credential: credential)
+            //self.showTokenAlert(serviceParameters["name"], credential: credential)
             self.testFitbit2(oauthswift)
+            
             }, failure: { error in
                 print(error.localizedDescription)
         })
     }
     
     func testFitbit2(oauthswift: OAuth2Swift) {
-        oauthswift.client.get("https://api.fitbit.com/1/user/[user-id]/activities/date/[date].json", parameters: [:],
-                              success: {
+        oauthswift.client.get("https://api.fitbit.com/1/user/-/activities/date/today.json", parameters: [:], success: {
                                 data, response in
                                 let jsonDict: AnyObject! = try? NSJSONSerialization.JSONObjectWithData(data, options: [])
-                                print(jsonDict)
+                                self.jsonDict = jsonDict
+                                print("viewController json", self.jsonDict)
+                                self.performSegueWithIdentifier("Authenticated", sender: self)
+
             }, failure: { error in
                 print(error.localizedDescription)
         })
@@ -246,10 +257,4 @@ extension ViewController {
         return url_handler
         
     }
-    //(I)
-    //let webViewController: WebViewController = createWebViewController()
-    //(S)
-    //var urlForWebView:?NSURL = nil
-    
-    
 }
