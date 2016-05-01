@@ -18,7 +18,7 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
         print("________________")
 
-        print(jsonDict)
+        stepCount.text = "\((jsonDict["summary"]!!["steps"]!)!)"
         
     }
 }
