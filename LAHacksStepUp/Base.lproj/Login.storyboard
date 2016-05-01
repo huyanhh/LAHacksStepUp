@@ -18,9 +18,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="gcc-n1-b3I" kind="show" id="STb-yb-uJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Main-->
+        <scene sceneID="tC9-ga-diQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="gcc-n1-b3I" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chb-pi-Uhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878.5" y="189"/>
         </scene>
     </scenes>
 </document>

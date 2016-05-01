@@ -10,9 +10,12 @@
 		00CC51723B39601D8726E7DD /* Pods_LAHacksStepUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31ACC443728519544E0C28F9 /* Pods_LAHacksStepUp.framework */; };
 		3B5DB9631CD49EC500DB8AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9621CD49EC500DB8AFA /* AppDelegate.swift */; };
 		3B5DB9651CD49EC500DB8AFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9641CD49EC500DB8AFA /* ViewController.swift */; };
-		3B5DB9681CD49EC500DB8AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB9661CD49EC500DB8AFA /* Main.storyboard */; };
+		3B5DB9681CD49EC500DB8AFA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB9661CD49EC500DB8AFA /* Login.storyboard */; };
 		3B5DB96A1CD49EC500DB8AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB9691CD49EC500DB8AFA /* Assets.xcassets */; };
 		3B5DB96D1CD49EC500DB8AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB96B1CD49EC500DB8AFA /* LaunchScreen.storyboard */; };
+		3B5DB9751CD57E9500DB8AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB9741CD57E9500DB8AFA /* Main.storyboard */; };
+		3B5DB9771CD57F0700DB8AFA /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9761CD57F0700DB8AFA /* ProgressViewController.swift */; };
+		3B5DB9791CD5805000DB8AFA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9781CD5805000DB8AFA /* SettingsViewController.swift */; };
 		D237FBC11CD5405700CDB2E2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D237FBBF1CD5405700CDB2E2 /* FBSDKCoreKit.framework */; };
 		D237FBC21CD5405700CDB2E2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D237FBC01CD5405700CDB2E2 /* FBSDKLoginKit.framework */; };
 		D237FBC41CD5406300CDB2E2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D237FBC31CD5406300CDB2E2 /* FBSDKShareKit.framework */; };
@@ -24,10 +27,13 @@
 		3B5DB95F1CD49EC500DB8AFA /* LAHacksStepUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAHacksStepUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5DB9621CD49EC500DB8AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B5DB9641CD49EC500DB8AFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3B5DB9671CD49EC500DB8AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B5DB9671CD49EC500DB8AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		3B5DB9691CD49EC500DB8AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5DB96C1CD49EC500DB8AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B5DB96E1CD49EC500DB8AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5DB9741CD57E9500DB8AFA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3B5DB9761CD57F0700DB8AFA /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		3B5DB9781CD5805000DB8AFA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8C4B772F25DABB10BD969927 /* Pods-LAHacksStepUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LAHacksStepUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LAHacksStepUp/Pods-LAHacksStepUp.debug.xcconfig"; sourceTree = "<group>"; };
 		D237FBBF1CD5405700CDB2E2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		D237FBC01CD5405700CDB2E2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -84,10 +90,13 @@
 			children = (
 				3B5DB9621CD49EC500DB8AFA /* AppDelegate.swift */,
 				3B5DB9641CD49EC500DB8AFA /* ViewController.swift */,
-				3B5DB9661CD49EC500DB8AFA /* Main.storyboard */,
+				3B5DB9661CD49EC500DB8AFA /* Login.storyboard */,
+				3B5DB9741CD57E9500DB8AFA /* Main.storyboard */,
+				3B5DB9781CD5805000DB8AFA /* SettingsViewController.swift */,
 				3B5DB9691CD49EC500DB8AFA /* Assets.xcassets */,
 				3B5DB96B1CD49EC500DB8AFA /* LaunchScreen.storyboard */,
 				3B5DB96E1CD49EC500DB8AFA /* Info.plist */,
+				3B5DB9761CD57F0700DB8AFA /* ProgressViewController.swift */,
 			);
 			path = LAHacksStepUp;
 			sourceTree = "<group>";
@@ -167,7 +176,8 @@
 			files = (
 				3B5DB96D1CD49EC500DB8AFA /* LaunchScreen.storyboard in Resources */,
 				3B5DB96A1CD49EC500DB8AFA /* Assets.xcassets in Resources */,
-				3B5DB9681CD49EC500DB8AFA /* Main.storyboard in Resources */,
+				3B5DB9681CD49EC500DB8AFA /* Login.storyboard in Resources */,
+				3B5DB9751CD57E9500DB8AFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,20 +236,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5DB9771CD57F0700DB8AFA /* ProgressViewController.swift in Sources */,
 				3B5DB9651CD49EC500DB8AFA /* ViewController.swift in Sources */,
 				3B5DB9631CD49EC500DB8AFA /* AppDelegate.swift in Sources */,
+				3B5DB9791CD5805000DB8AFA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3B5DB9661CD49EC500DB8AFA /* Main.storyboard */ = {
+		3B5DB9661CD49EC500DB8AFA /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3B5DB9671CD49EC500DB8AFA /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		3B5DB96B1CD49EC500DB8AFA /* LaunchScreen.storyboard */ = {
