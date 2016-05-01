@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Dashboard View Controller-->
@@ -17,14 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLI-Wg-R2h">
-                                <rect key="frame" x="279" y="168" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLI-Wg-R2h">
+                                <rect key="frame" x="12" y="86" width="576" height="164"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEPS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvy-Zk-BSC">
+                                <rect key="frame" x="255" y="229" width="90" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step screen" translatesAutoresizingMaskIntoConstraints="NO" id="mNY-jD-eRY">
+                                <rect key="frame" x="0.0" y="258" width="600" height="342"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rn5-p3-NXH">
+                                <rect key="frame" x="491" y="72" width="97" height="30"/>
+                                <state key="normal" title="After 10,000..."/>
+                                <connections>
+                                    <action selector="goalReached" destination="Ukz-fY-dt4" eventType="touchUpInside" id="4lH-h0-LNf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wvy-Zk-BSC" firstAttribute="centerX" secondItem="hLI-Wg-R2h" secondAttribute="centerX" id="3kj-a6-Fq1"/>
+                            <constraint firstItem="mNY-jD-eRY" firstAttribute="top" secondItem="wvy-Zk-BSC" secondAttribute="bottom" constant="8" symbolic="YES" id="7Bh-yO-Joq"/>
+                            <constraint firstItem="hLI-Wg-R2h" firstAttribute="centerX" secondItem="44e-7j-r27" secondAttribute="centerX" id="Gsd-WW-qTL"/>
+                            <constraint firstItem="Rn5-p3-NXH" firstAttribute="top" secondItem="oVm-z4-iea" secondAttribute="bottom" constant="8" symbolic="YES" id="HYM-QE-Bbz"/>
+                            <constraint firstItem="hLI-Wg-R2h" firstAttribute="top" secondItem="oVm-z4-iea" secondAttribute="bottom" constant="22" id="Jjq-8O-sf2"/>
+                            <constraint firstItem="5bm-ar-5E5" firstAttribute="top" secondItem="hLI-Wg-R2h" secondAttribute="bottom" constant="350" id="S4Y-1T-AZj"/>
+                            <constraint firstItem="wvy-Zk-BSC" firstAttribute="bottom" secondItem="hLI-Wg-R2h" secondAttribute="bottom" constant="4" id="VWG-Yg-f58"/>
+                            <constraint firstItem="Rn5-p3-NXH" firstAttribute="trailing" secondItem="hLI-Wg-R2h" secondAttribute="trailing" id="cB2-6q-p2m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mNY-jD-eRY" secondAttribute="trailing" constant="-20" id="cHk-QU-7Ve"/>
+                            <constraint firstItem="mNY-jD-eRY" firstAttribute="leading" secondItem="44e-7j-r27" secondAttribute="leadingMargin" constant="-20" id="dCP-W2-AF2"/>
+                            <constraint firstItem="wvy-Zk-BSC" firstAttribute="top" secondItem="oVm-z4-iea" secondAttribute="bottom" constant="165" id="l5o-Bo-YWF"/>
+                            <constraint firstItem="5bm-ar-5E5" firstAttribute="top" secondItem="mNY-jD-eRY" secondAttribute="bottom" id="mfA-OQ-QUq"/>
+                            <constraint firstItem="mNY-jD-eRY" firstAttribute="top" secondItem="wvy-Zk-BSC" secondAttribute="bottom" constant="4" id="qnj-aL-a3V"/>
+                            <constraint firstItem="hLI-Wg-R2h" firstAttribute="leading" secondItem="44e-7j-r27" secondAttribute="leadingMargin" constant="-8" id="yvA-Kg-Zts"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7Bh-yO-Joq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="9pf-44-8ig">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="EAW-2N-glq">
@@ -39,7 +77,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2z-i2-hOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2153" y="377"/>
+            <point key="canvasLocation" x="2517" y="419"/>
+        </scene>
+        <!--Sponsor View Controller-->
+        <scene sceneID="tbe-L5-I4F">
+            <objects>
+                <viewController storyboardIdentifier="Sponsors" id="qGa-dN-Do8" customClass="SponsorViewController" customModule="LAHacksStepUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kSL-mq-J3l"/>
+                        <viewControllerLayoutGuide type="bottom" id="IGr-hL-c6B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hfJ-qw-h78">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvN-7O-PlN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <state key="normal" backgroundImage="sponsors"/>
+                                <connections>
+                                    <action selector="goBack" destination="qGa-dN-Do8" eventType="touchUpInside" id="3YZ-ix-cJJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZvN-7O-PlN" firstAttribute="top" secondItem="hfJ-qw-h78" secondAttribute="topMargin" id="G52-Ta-HiZ"/>
+                            <constraint firstItem="IGr-hL-c6B" firstAttribute="top" secondItem="ZvN-7O-PlN" secondAttribute="bottom" id="met-Dm-8zT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZvN-7O-PlN" secondAttribute="trailing" constant="-20" id="sUT-lP-3yu"/>
+                            <constraint firstItem="ZvN-7O-PlN" firstAttribute="leading" secondItem="hfJ-qw-h78" secondAttribute="leadingMargin" constant="-20" id="urp-bE-V26"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8D-z2-w5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517" y="1131"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="ilU-mP-Bqo">
@@ -76,7 +147,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ig0-Ns-2l2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2985" y="24"/>
+            <point key="canvasLocation" x="3285" y="-60"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lS4-QR-mpz">
@@ -90,12 +161,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aft-HI-UMT">
-                                <rect key="frame" x="248" y="416" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="sBg-dU-3M3">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aft-HI-UMT">
+                                <rect key="frame" x="53" y="527" width="504" height="46"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="Ac2-aN-2n8"/>
+                                    <constraint firstAttribute="width" constant="504" id="ZV8-Tw-iu9"/>
                                 </constraints>
-                                <state key="normal" title="Fitbit"/>
                                 <connections>
                                     <action selector="fitbitPressed" destination="kQO-jT-Tqp" eventType="touchUpInside" id="p9u-dL-KOb"/>
                                 </connections>
@@ -103,8 +176,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RBP-KX-hB6" firstAttribute="top" secondItem="Aft-HI-UMT" secondAttribute="bottom" constant="154" id="XIF-Qq-4Wj"/>
-                            <constraint firstItem="Aft-HI-UMT" firstAttribute="leading" secondItem="ZRd-us-cqL" secondAttribute="leading" constant="248" id="cu6-p3-8cC"/>
+                            <constraint firstAttribute="trailing" secondItem="sBg-dU-3M3" secondAttribute="trailing" id="2E4-Ru-YNo"/>
+                            <constraint firstItem="sBg-dU-3M3" firstAttribute="leading" secondItem="ZRd-us-cqL" secondAttribute="leading" id="SAa-pi-lJ7"/>
+                            <constraint firstItem="sBg-dU-3M3" firstAttribute="centerX" secondItem="Aft-HI-UMT" secondAttribute="centerX" constant="-5" id="UXe-m8-dxr"/>
+                            <constraint firstItem="sBg-dU-3M3" firstAttribute="top" secondItem="JhF-qm-IwN" secondAttribute="bottom" id="VCb-Rc-cON"/>
+                            <constraint firstItem="sBg-dU-3M3" firstAttribute="bottom" secondItem="RBP-KX-hB6" secondAttribute="top" id="acW-yd-crJ"/>
+                            <constraint firstItem="RBP-KX-hB6" firstAttribute="top" secondItem="Aft-HI-UMT" secondAttribute="bottom" constant="27" id="uGu-Lq-WLR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k90-cY-TeN"/>
@@ -135,4 +212,9 @@
             <point key="canvasLocation" x="619" y="377"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login" width="343" height="610"/>
+        <image name="sponsors" width="342" height="611"/>
+        <image name="step screen" width="686" height="808"/>
+    </resources>
 </document>

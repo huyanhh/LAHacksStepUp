@@ -23,6 +23,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBarHidden = true
         // Do any additional setup after loading the view, typically from a nib.
         
         NSNotificationCenter.defaultCenter().addObserverForName("Authenticated", object: nil, queue: nil) { (NSNotification) in
@@ -35,7 +36,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         else
         {
             let loginView : FBSDKLoginButton = FBSDKLoginButton()
-            self.view.addSubview(loginView)
+            //self.view.addSubview(loginView)
             loginView.center = self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
@@ -52,6 +53,11 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = false
     }
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         print("User Logged In")
