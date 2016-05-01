@@ -36,13 +36,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
         }
-        
-        
-        initConf()
-        
-        // init now
-        get_url_handler()
-        
     }
     
     override func didReceiveMemoryWarning() {

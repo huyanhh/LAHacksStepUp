@@ -10,6 +10,14 @@ import UIKit
 
 class ProgressViewController: UIViewController {
 
+    @IBOutlet weak var userStepsTaken: UILabel!
+    @IBOutlet weak var donations: UILabel!
+    @IBOutlet weak var avgSteps: UILabel!
+    @IBOutlet weak var daysActive: UILabel!
+    @IBOutlet weak var monthYear: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

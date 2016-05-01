@@ -11,7 +11,7 @@ import UIKit
 class SettingsViewController: UITableViewController {
 
     
-    let rowData = ["About us", "Log Out"]
+    let rowData = ["About us", "Charities", "Log Out"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
