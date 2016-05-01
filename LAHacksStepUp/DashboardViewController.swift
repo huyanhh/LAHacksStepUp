@@ -18,18 +18,23 @@ class DashboardViewController: UIViewController {
         stepCount.textColor = UIColor(red: 93/255.0, green: 188/255.0, blue: 210/255.0, alpha: 1)
         
         let alert = UIAlertController(title: "Congratulations!", message: "You've reached your goal! 50 cents was donated to the charity of your choice.", preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "Yay!", style: .Cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Yay!", style: .Cancel) { UIAlertAction in
+            self.stepCount.text = self.currentSteps})
         presentViewController(alert, animated: true, completion: nil)
     }
     
     var jsonDict: AnyObject!
+    var currentSteps: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        stepCount.text = "\((jsonDict["summary"]!!["steps"]!)!)"
-        
+        let sponsors = storyboard!.instantiateViewControllerWithIdentifier("Sponsors") as! SponsorViewController
+        sponsors.view.backgroundColor = UIColor.clearColor()
+        sponsors.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
+        presentViewController(sponsors, animated: true, completion: nil)
+
+        currentSteps = "\((jsonDict["summary"]!!["steps"]!)!)"
+        stepCount.text = currentSteps
     }
     
     override func viewWillAppear(animated: Bool) {

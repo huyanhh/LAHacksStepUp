@@ -161,7 +161,7 @@ extension ViewController {
     }
     
     func testFitbit2(oauthswift: OAuth2Swift) {
-        oauthswift.client.get("https://api.fitbit.com/1/user/-/activities/date/2016-04-26.json", parameters: [:], success: {
+        oauthswift.client.get("https://api.fitbit.com/1/user/-/activities/date/today.json", parameters: [:], success: {
                                 data, response in
                                 let jsonDict: AnyObject! = try? NSJSONSerialization.JSONObjectWithData(data, options: [])
                                 self.jsonDict = jsonDict

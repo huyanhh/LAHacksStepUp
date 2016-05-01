@@ -79,6 +79,39 @@
             </objects>
             <point key="canvasLocation" x="2517" y="419"/>
         </scene>
+        <!--Sponsor View Controller-->
+        <scene sceneID="tbe-L5-I4F">
+            <objects>
+                <viewController storyboardIdentifier="Sponsors" id="qGa-dN-Do8" customClass="SponsorViewController" customModule="LAHacksStepUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kSL-mq-J3l"/>
+                        <viewControllerLayoutGuide type="bottom" id="IGr-hL-c6B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hfJ-qw-h78">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvN-7O-PlN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <state key="normal" backgroundImage="sponsors"/>
+                                <connections>
+                                    <action selector="goBack" destination="qGa-dN-Do8" eventType="touchUpInside" id="3YZ-ix-cJJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZvN-7O-PlN" firstAttribute="top" secondItem="hfJ-qw-h78" secondAttribute="topMargin" id="G52-Ta-HiZ"/>
+                            <constraint firstItem="IGr-hL-c6B" firstAttribute="top" secondItem="ZvN-7O-PlN" secondAttribute="bottom" id="met-Dm-8zT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZvN-7O-PlN" secondAttribute="trailing" constant="-20" id="sUT-lP-3yu"/>
+                            <constraint firstItem="ZvN-7O-PlN" firstAttribute="leading" secondItem="hfJ-qw-h78" secondAttribute="leadingMargin" constant="-20" id="urp-bE-V26"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8D-z2-w5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517" y="1131"/>
+        </scene>
         <!--Settings View Controller-->
         <scene sceneID="ilU-mP-Bqo">
             <objects>
@@ -181,6 +214,7 @@
     </scenes>
     <resources>
         <image name="login" width="343" height="610"/>
+        <image name="sponsors" width="342" height="611"/>
         <image name="step screen" width="686" height="808"/>
     </resources>
 </document>
