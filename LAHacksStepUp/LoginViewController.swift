@@ -13,7 +13,7 @@ import FBSDKLoginKit
 import Bolts
 import OAuthSwift
 
-class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     @IBAction func fitbitPressed() {
         doAuthService("Fitbit2")
@@ -29,12 +29,9 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         NSNotificationCenter.defaultCenter().addObserverForName("Authenticated", object: nil, queue: nil) { (NSNotification) in
             self.performSegueWithIdentifier("Authenticated", sender: self)
         }
-        if (FBSDKAccessToken.currentAccessToken() != nil)
-        {
+        if (FBSDKAccessToken.currentAccessToken() != nil) {
             // User is already logged in, do work such as go to next view controller.
-        }
-        else
-        {
+        } else {
             let loginView : FBSDKLoginButton = FBSDKLoginButton()
             //self.view.addSubview(loginView)
             loginView.center = self.view.center
@@ -42,34 +39,26 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.delegate = self
         }
         
-        
         initConf()
         
         // init now
         get_url_handler()
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBarHidden = false
     }
+    
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         print("User Logged In")
         
-        if ((error) != nil)
-        {
+        if ((error) != nil) {
             // Process error
-        }
-        else if result.isCancelled {
+        } else if result.isCancelled {
             // Handle cancellations
-        }
-        else {
+        } else {
             // If you ask for multiple permissions at once, you
             // should check if specific permissions missing
             if result.grantedPermissions.contains("email")
@@ -103,6 +92,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
         })
     }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let vc = segue.destinationViewController as? DashboardViewController {
             vc.jsonDict = jsonDict
@@ -110,7 +100,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
 }
 
-extension ViewController {
+extension LoginViewController {
     
     func doAuthService(service: String) {
         
@@ -118,7 +108,6 @@ extension ViewController {
             showAlertView("Miss configuration", message: "\(service) not configured")
             return
         }
-        
         
         if Services.parametersEmpty(parameters) { // no value to set
             let message = "\(service) seems to have not weel configured. \nPlease fill consumer key and secret into configuration file \(self.confPath)"
@@ -178,7 +167,7 @@ let services = Services()
 let DocumentDirectory = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
 let FileManager: NSFileManager = NSFileManager.defaultManager()
 
-extension ViewController {
+extension LoginViewController {
     // MARK: utility methods
     
     var confPath: String {

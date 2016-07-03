@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		00CC51723B39601D8726E7DD /* Pods_LAHacksStepUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31ACC443728519544E0C28F9 /* Pods_LAHacksStepUp.framework */; };
 		3B5DB9631CD49EC500DB8AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9621CD49EC500DB8AFA /* AppDelegate.swift */; };
-		3B5DB9651CD49EC500DB8AFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9641CD49EC500DB8AFA /* ViewController.swift */; };
+		3B5DB9651CD49EC500DB8AFA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9641CD49EC500DB8AFA /* LoginViewController.swift */; };
 		3B5DB96A1CD49EC500DB8AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB9691CD49EC500DB8AFA /* Assets.xcassets */; };
 		3B5DB96D1CD49EC500DB8AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB96B1CD49EC500DB8AFA /* LaunchScreen.storyboard */; };
 		3B5DB9751CD57E9500DB8AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DB9741CD57E9500DB8AFA /* Main.storyboard */; };
 		3B5DB9771CD57F0700DB8AFA /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9761CD57F0700DB8AFA /* DashboardViewController.swift */; };
-		3B5DB9791CD5805000DB8AFA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DB9781CD5805000DB8AFA /* SettingsViewController.swift */; };
 		3B7304021CD59983004CB41F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7304011CD59983004CB41F /* Constants.swift */; };
 		3B7304041CD59F27004CB41F /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B7304031CD59F27004CB41F /* Services.plist */; };
 		3B7304061CD59F7E004CB41F /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7304051CD59F7E004CB41F /* Services.swift */; };
@@ -31,13 +30,12 @@
 		31ACC443728519544E0C28F9 /* Pods_LAHacksStepUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LAHacksStepUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5DB95F1CD49EC500DB8AFA /* LAHacksStepUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAHacksStepUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5DB9621CD49EC500DB8AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B5DB9641CD49EC500DB8AFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B5DB9641CD49EC500DB8AFA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B5DB9691CD49EC500DB8AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5DB96C1CD49EC500DB8AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B5DB96E1CD49EC500DB8AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B5DB9741CD57E9500DB8AFA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3B5DB9761CD57F0700DB8AFA /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		3B5DB9781CD5805000DB8AFA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3B7304011CD59983004CB41F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3B7304031CD59F27004CB41F /* Services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Services.plist; sourceTree = "<group>"; };
 		3B7304051CD59F7E004CB41F /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
@@ -99,8 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				3B5DB9621CD49EC500DB8AFA /* AppDelegate.swift */,
-				3B5DB9781CD5805000DB8AFA /* SettingsViewController.swift */,
-				3B5DB9641CD49EC500DB8AFA /* ViewController.swift */,
+				3B5DB9641CD49EC500DB8AFA /* LoginViewController.swift */,
 				3B5DB9761CD57F0700DB8AFA /* DashboardViewController.swift */,
 				3B73040C1CD66B3C004CB41F /* SponsorViewController.swift */,
 				3B7304071CD5A0C1004CB41F /* WebViewController.swift */,
@@ -256,11 +253,10 @@
 				3B7304061CD59F7E004CB41F /* Services.swift in Sources */,
 				3B5DB9771CD57F0700DB8AFA /* DashboardViewController.swift in Sources */,
 				3B73040A1CD5C2FE004CB41F /* SwiftyJSON.swift in Sources */,
-				3B5DB9651CD49EC500DB8AFA /* ViewController.swift in Sources */,
+				3B5DB9651CD49EC500DB8AFA /* LoginViewController.swift in Sources */,
 				3B7304081CD5A0C1004CB41F /* WebViewController.swift in Sources */,
 				3B73040D1CD66B3C004CB41F /* SponsorViewController.swift in Sources */,
 				3B5DB9631CD49EC500DB8AFA /* AppDelegate.swift in Sources */,
-				3B5DB9791CD5805000DB8AFA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
